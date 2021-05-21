@@ -1,21 +1,208 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-  li:target {
-      font-size: xx-large;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  padding: 16px 48px;
+  background: linear-gradient(124deg, #1eca82, #4b73da);
+  background-size: 200% 200%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  -o-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  outline: 0;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#btn img {
+  margin: 0 5px 0 0;
+}
+
+#btn:hover {
+  background-color: #444;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#btn:active {
+  background-color: #111;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#cpy-btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border-radius: 5px;
+}
+
+#cpy-btn div {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+#cpy-btn:hover {
+  background-color: darkgrey;
+}
+
+#cpy-btn img {
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.dial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  max-width: 600px;
+  flex-wrap: wrap;
+}
+
+.dial-item {
+  position: static;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31.25px;
+  line-height: 31px;
+}
+
+.dial-item:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.dial-item:target {
+  background: linear-gradient(180deg, #f7f7f7 0%, #ededed 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.roller span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+  color: #000000;
+}
+
+#placeholder {
+  color: #888888;
+}
+
+.roller {
+  background: linear-gradient(180deg, #f7f7f7 0%, #ededed 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  min-width: 281px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.github-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.github-icon:hover {
+  height: 22px;
+  width: 22px;
+}

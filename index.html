@@ -1,54 +1,74 @@
 <!DOCTYPE html>
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex" />
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ALPHABET SPRINT NAMR</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>RLP SPRINT NAMR</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type='module' src="myscript.js"></script>
+  <body>
+    <div class="container">
+      <div class="dial">
+        <!-- <div class='dial-item' id="-"><a href="/">-</a></div> -->
+        <div class="dial-item" id="A"><a href="#A">A</a></div>
+        <div class="dial-item" id="B"><a href="#B">B</a></div>
+        <div class="dial-item" id="C"><a href="#C">C</a></div>
+        <div class="dial-item" id="D"><a href="#D">D</a></div>
+        <div class="dial-item" id="E"><a href="#E">E</a></div>
+        <div class="dial-item" id="F"><a href="#F">F</a></div>
+        <div class="dial-item" id="G"><a href="#G">G</a></div>
+        <div class="dial-item" id="H"><a href="#H">H</a></div>
+        <div class="dial-item" id="I"><a href="#I">I</a></div>
+        <div class="dial-item" id="J"><a href="#J">J</a></div>
+        <div class="dial-item" id="K"><a href="#K">K</a></div>
+        <div class="dial-item" id="L"><a href="#L">L</a></div>
+        <div class="dial-item" id="M"><a href="#M">M</a></div>
+        <div class="dial-item" id="N"><a href="#N">N</a></div>
+        <div class="dial-item" id="O"><a href="#O">O</a></div>
+        <div class="dial-item" id="P"><a href="#P">P</a></div>
+        <div class="dial-item" id="Q"><a href="#Q">Q</a></div>
+        <div class="dial-item" id="R"><a href="#R">R</a></div>
+        <div class="dial-item" id="S"><a href="#S">S</a></div>
+        <div class="dial-item" id="T"><a href="#T">T</a></div>
+        <div class="dial-item" id="U"><a href="#U">U</a></div>
+        <div class="dial-item" id="V"><a href="#V">V</a></div>
+        <div class="dial-item" id="W"><a href="#W">W</a></div>
+        <div class="dial-item" id="X"><a href="#X">X</a></div>
+        <div class="dial-item" id="Y"><a href="#Y">Y</a></div>
+        <div class="dial-item" id="Z"><a href="#Z">Z</a></div>
+      </div>
 
-</head>
+      <div class="roller" id="roller">
+        <span class="placeholder" id="placeholder">Select letter and spin!</span
+        >
+        <span class="adj" id="adj"></span>
+        <span>&nbsp</span>
+        <span class="animal" id="animal"></span>
 
-<body>
-  <ul>
-    <li id="-"><a href="/">-</a></li>
-    <li id="A"><a href="#A">A</a></li>
-    <li id="B"><a href="#B">B</a></li>
-    <li id="C"><a href="#C">C</a></li>
-    <li id="D"><a href="#D">D</a></li>
-    <li id="E"><a href="#E">E</a></li>
-    <li id="F"><a href="#F">F</a></li>
-    <li id="G"><a href="#G">G</a></li>
-    <li id="H"><a href="#H">H</a></li>
-    <li id="I"><a href="#I">I</a></li>
-    <li id="J"><a href="#J">J</a></li>
-    <li id="K"><a href="#K">K</a></li>
-    <li id="L"><a href="#L">L</a></li>
-    <li id="M"><a href="#M">M</a></li>
-    <li id="N"><a href="#N">N</a></li>
-    <li id="O"><a href="#O">O</a></li>
-    <li id="P"><a href="#P">P</a></li>
-    <li id="Q"><a href="#Q">Q</a></li>
-    <li id="R"><a href="#R">R</a></li>
-    <li id="S"><a href="#S">S</a></li>
-    <li id="T"><a href="#T">T</a></li>
-    <li id="U"><a href="#U">U</a></li>
-    <li id="V"><a href="#V">V</a></li>
-    <li id="W"><a href="#W">W</a></li>
-    <li id="X"><a href="#X">X</a></li>
-    <li id="Y"><a href="#Y">Y</a></li>
-    <li id="Z"><a href="#Z">Z</a></li>
-  </ul>
+        <button id="cpy-btn">
+          <img id="cpy-icon" src="static/images/copy.svg" class="hide" />
+        </button>
+      </div>
 
-  <div class='roller' id='roller'>
-    <span class='adj' id='adj'></span>
-    <span class='animal' id='animal'></span>
-  </div>
-
-  <button id='btn'>Do thing</button>
-
-</body>
-
+      <button id="btn">
+        <img src="static/images/refresh.svg" />
+        Generate name
+      </button>
+      
+      <a href="https://github.com/shaftoe44/sprint-namr"
+        ><img
+          class="github-icon"
+          alt="Link to GitHub"
+          src="static/images/GitHub-Mark-64px.png"
+      /></a>
+    </div>
+  </body>
 </html>
