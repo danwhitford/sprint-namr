@@ -1,3 +1,4 @@
 Yet Another Sprint Namer
 
-See at https://shaftoe44.github.io/sprint-namr/
+See at https://danwhitford.github.io/sprint-namr/
+
